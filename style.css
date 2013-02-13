@@ -11,10 +11,15 @@
 *	gray: #e5e6e6
 *	red: #b32017
 *	
+*	p: #8a8a8a
 *	icon p: #5f6062
 */
 
 /* ---------------- Page Bootstrap --------------------- */
+
+body {
+	font-family: Arial, sans-serif;
+}
 
 .container {
 	width: 880px;
@@ -38,6 +43,90 @@
 		line-height: 130px;
 		color: #fff;
 	}
+
+/* ---------------- Sub Headline ---------------------- */
+
+.sub-headline {
+
+}
+
+.sub-headline > h2 {
+	font-family: Trebuchet MS, sans-serif;
+	font-size: 35px;
+	color: #4d85c5;
+	margin: 0px 0px 9px 0px;
+}
+
+.sub-headline > p {
+	font-size: 24px;
+	color: #8a8a8a;
+	margin: 0px
+}
+
+/* ---------------- point lists ---------------------- */
+
+ul.points {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+ul.points li {
+	margin-bottom: 35px;
+}
+
+ul.points li h3 {
+	font-family: Trebuchet MS, sans-serif;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 25px;
+	color: #4d85c5;
+	letter-spacing: 2px;
+	margin-bottom: 3px;
+}
+
+ul.points li p {
+	font-size: 20px;
+	color: #8a8a8a;
+	margin: 0px
+}
+
+/* ---------------- bulleted point lists ---------------------- */
+
+ul.bullet-points {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+ul.bullet-points li {
+	margin-bottom: 50px;
+}
+
+ul.bullet-points li h3 {
+	font-family: Trebuchet MS, sans-serif;
+	font-weight: normal;
+	font-size: 25px;
+	color: #4d85c5;
+	letter-spacing: 2px;
+	margin-bottom: 3px;
+}
+
+ul.bullet-points ul {
+	list-style-type: circle;
+	list-style-color: #4d85c5;
+	margin-top: 25px;
+}
+
+ul.bullet-points ul li {
+	margin-bottom: 24px;
+}
+
+ul.bullet-points ul li p {
+	font-size: 20px;
+	color: #8a8a8a;
+	margin: 0px
+}
 
 /* ---------------- Icon Modules ------------------------ */
 
@@ -99,7 +188,7 @@
 
 		/* module fonts */
 
-		a.module > h3 {
+		a.module > h4 {
 			font-family: Trebuchet MS, sans-serif;
 			text-transform: uppercase;
 			font-size: 34px;
@@ -110,7 +199,7 @@
 			margin: 145px 0px 9px 0px;
 		}
 
-		a.module:hover > h3 {
+		a.module:hover > h4 {
 			color: #FFF;
 			text-shadow: none;
 		}
@@ -130,13 +219,73 @@
 			text-shadow: none;
 		}
 
+/* ---------------- form ---------------------------------------- */
 
+form {
+	background: #e5e6e6;
+	padding: 35px;
+	padding-bottom: 100px;
+	width: 505px;
+	position: relative;
+}
 
+form > p {
+	margin-bottom: 25px;
+}
 
+input[type="text"] {
+	width: 500px;
+	height: 42px;
+	border: none;
+	box-shadow: inset 0px 2px 2px rgba(0,0,0,0.2), 0px 1px 0px rgba(255,255,255,0.4);
+}
 
+input[type="submit"] {
+	width: 193px;
+	height: 56px;
+	background: #4d85c5;
+	color: #fff;
+	border: none;
+	font-size: 25px;
+	font-family: Trebuchet MS, sans-serif;
+	letter-spacing: 1px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
 
+.icon {
+	background: url(icons/blueEmr-icon.png) no-repeat 0 0;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	bottom: 8px;
+	left: 12px;
+}
 
+::-webkit-input-placeholder {
+   color: #bfbfbf;
+   font-size: 16px;
+   padding-left: 10px;
+}
 
+:-moz-placeholder { /* Firefox 18- */
+   color: #bfbfbf;
+   font-size: 16px;
+   padding-left: 10px;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #bfbfbf;
+   font-size: 16px;
+   padding-left: 10px;  
+}
+
+:-ms-input-placeholder {  
+   color: #bfbfbf;
+   font-size: 16px;
+   padding-left: 10px;  
+}
 
 
 
