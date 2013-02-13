@@ -10,6 +10,8 @@
 * 	white: #FFF
 *	gray: #e5e6e6
 *	red: #b32017
+*	
+*	icon p: #5f6062
 */
 
 /* ---------------- Page Bootstrap --------------------- */
@@ -45,33 +47,83 @@
 	clear: both;
 }
 
-	.module {
+	a.module {
 		float: left;
 		margin-right: 24.5px;
 		width: 277;
 		height: 277;
 		text-align: center;
 		background-color: #e5e6e6;
+		text-decoration: none;
 	}
 
-	.module:last-child {
+	a.module:last-child {
 		margin-right: 0px;
 	}
 
-	.module:hover {
+	a.module:hover {
 		background-color: #b32017;
 	}
 
-		.module > h3 {
+	.drive {
+		background: url(icons/cloud-icon.png) no-repeat center 44;
+		width: 132px;
+		height: 85px;
+	}
+
+	.drive:hover {
+		background: url(icons/whiteCloud-icon.png) no-repeat center 44;
+	}
+
+	.schedule {
+		background: url(icons/calendar-icon.png) no-repeat center 29;
+		width: 100px;
+		height: 101px;
+	}
+
+	.schedule:hover {
+		background: url(icons/whiteCloud-icon.png) no-repeat center 29;
+	}
+
+	.download {
+		background: url(icons/emr-icon.png) no-repeat center 30;
+		width: 108px;
+		height: 105px;
+	}
+
+	.download:hover {
+		background: url(icons/whiteCloud-icon.png) no-repeat center 30;
+	}
+
+
+		a.module > h3 {
 			font-family: Trebuchet MS, sans-serif;
 			text-transform: uppercase;
-			font-size: 32px;
+			font-size: 34px;
+			letter-spacing: 1px;
 			color: #4d85c5;
 			text-shadow: 0px 1px 0px rgba(255,255,255,1), 0px -1px 0px rgba(0,0,0,0.2);
+			padding: 0px;
+			margin: 145px 0px 9px 0px;
 		}
 
-		.module:hover > h3 {
+		a.module:hover > h3 {
 			color: #FFF;
+			text-shadow: none;
+		}
+
+		a.module > p {
+			color: #5f6062;
+			text-shadow: 0px 1px 0px rgba(255,255,255,1);
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 25px;
+			padding: 0px;
+			margin: 0px 35px 0px 35px;
+		}
+
+		a.module:hover > p {
+			color: #fff;
 			text-shadow: none;
 		}
 
