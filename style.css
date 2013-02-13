@@ -65,6 +65,8 @@
 		background-color: #b32017;
 	}
 
+	/* module icons - these could be sprited for less http requests */
+
 	.drive {
 		background: url(icons/cloud-icon.png) no-repeat center 44;
 		width: 132px;
@@ -82,7 +84,7 @@
 	}
 
 	.schedule:hover {
-		background: url(icons/whiteCloud-icon.png) no-repeat center 29;
+		background: url(icons/whiteCalendar-icon.png) no-repeat center 29;
 	}
 
 	.download {
@@ -92,9 +94,10 @@
 	}
 
 	.download:hover {
-		background: url(icons/whiteCloud-icon.png) no-repeat center 30;
+		background: url(icons/whiteEmr-icon.png) no-repeat center 30;
 	}
 
+		/* module fonts */
 
 		a.module > h3 {
 			font-family: Trebuchet MS, sans-serif;
